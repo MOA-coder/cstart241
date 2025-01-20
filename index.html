@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação do DOM</title>
+  </head>
+  <body>
+    <!-- innerHTML -->
+     <div id="teste">Este é o primeiro text</div>
+    <!-- getElemntById() - 1 -->
+    <p id="txt">Texto original</p>
+    <!-- getElemntBClassName() - 2 -->
+    <p class="txt2">Texto original</p>
+    <p class="txt2">Texto original</p>
+    <p class="txt2">Texto original</p>
+    <p class="txt2">Texto original</p>
+    <p class="txt2">Texto original</p>
+    <p class="txt2">Texto original</p>
+    <!-- getElemntBClassName() - 3-->
+    <img src="2.png" alt="" width="20">
+    <img src="2.png" alt="" width="20">
+    <img src="2.png" alt="" width="20">
+    <img src="2.png" alt="" width="20">
+    <img src="2.png" alt="" width="20">
+
+    <script>
+      // 1
+      const txt1 = document.getElementById('txt');
+      // const btn1 = document.getElementById('btn1');
+
+      txt1.textContent = 'Texto alterado';
+      txt1.style.fontSize = "50px";
+
+      // 2
+      const txt2 = document.getElementsByClassName('txt2');
+      for (let i = 0; i < txt2.length; i++){
+        txt2[i].style.color = "orange"
+        txt2[i].style.fontSize = "50px";
+
+      }
+      // 3
+      const img = document.getElementsByTagName('img');
+      for (let z = 0; z < img.length; z++){
+        img[z].style.width = '350px'
+
+      }
+
+      const inner =  document.getElementById('teste');
+      inner.innerHTML = 'Este é o segundo texto';
+   </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Validação de formulários</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form id="valC" class="form" autocomplete="off">
+            <div class="title">Criar conta</div>
+            <div class="subtitle">Vamos criar a tua conta!</div>
+
+            <div class="input-container ic1">
+                <input id="nome" class="input" type="text" placeholder=" " />
+                <div class="cut"></div>
+                <label for="nome" class="placeholder">Nome completo</label>
+                <span id="erro-nome" class="erro"></span>
+            </div>
+
+            <div class="input-container ic2">
+                <input id="email" class="input" type="email" placeholder=" " />
+                <div class="cut cut-short"></div>
+                <label for="email" class="placeholder">E-mail</label>
+                <span id="erro-email" class="erro"></span>
+            </div>
+
+            <div class="input-container ic2">
+                <input id="password" class="input" type="password"
+                    placeholder=" " />
+                <div class="cut cut-short"></div>
+                <label for="password" class="placeholder">Palavra-passe</label>
+                <span id="erro-pass" class="erro"></span>
+            </div>
+
+            <div class="input-container ic2" id="ic4">
+                <input id="phone" class="input" type="text" placeholder=" " />
+                <div class="cut cut-short"></div>
+                <label for="phone" class="placeholder">Telefone</label>
+                <span id="erro-phone" class="erro"></span>
+            </div>
+            <p id="msg"></p>
+
+            <button type="submit" class="submit" id="submit">Criar
+                conta</button>
+
+        </form>
+
+        <script src="script.js"></script>
+    </body>
+</html>
